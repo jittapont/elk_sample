@@ -16,6 +16,7 @@
 > Visit kibana by go to [link](http://localhost:5601/app/home#/)
 
 ### Start logstash
+> :warning: **For window** path separator should be `/` instead of `\` in logstash config
 ```bash
   docker run -it --name logstash -h logstash --link elasticsearch:elasticsearch -v ~/logstash.conf:/usr/share/logstash/pipeline/logstash.conf logstash:7.9.2 
 ```
